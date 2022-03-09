@@ -5,23 +5,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../font-awesom/css/font-awesome.min.css">
     <style type="text/css">
-        .button-player{
+        .button{
             border-style: none;
             cursor: pointer;
             color:white;
             background-color:transparent ;
+            width:50px
         }
-        .player-dimensions{
+        .player-container{
             box-shadow: 0 0 20px rgba(0,0,0,2);
             width: 800px;
             height: 600px;
             display: flex;
             flex-direction: column;
         }
-        .fill-video-container{
+        .video-container{
             flex-grow: 1
         }
-        .player-botton{
+        .button_container{
             background-color:black;
         }
 
@@ -29,15 +30,21 @@
 
 </head>
 <body>
-<div id="player" class="player-dimensions">
-    <div class="js-video-container fill-video-container" ></div>
+<div id="player" class="player-container">
+    <div class="js-video-container video-container" ></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-    <div class="player-botton">
-        <button class="js-play-button button-player">
+    <div class="button_container">
+        <button class="js-play-button button">
             <i class="fa fa-play fa-2x" aria-hidden="true"></i>
         </button>
-        <button class="js-pause-button button-player" hidden>
+        <button class="js-pause-button button" hidden>
             <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
+        </button>
+        <button class="js-volume-button button" >
+            <i class="fa fa-volume-off fa-2x" aria-hidden="true"></i>
+        </button>
+        <button class=" js-mute-button button" >
+            <i class="fa fa-volume-up fa-2x" aria-hidden="true" hidden></i>
         </button>
     </div>
 
