@@ -10,7 +10,11 @@
             cursor: pointer;
             color:white;
             background-color:transparent ;
-            width:50px
+            width:50px;
+            float:left
+        }
+        .button#expand{
+            float: right;
         }
         .player-container{
             box-shadow: 0 0 20px rgba(0,0,0,2);
@@ -25,6 +29,7 @@
         .button_container{
             background-color:black;
         }
+
 
     </style>
 
@@ -45,6 +50,10 @@
         </button>
         <button class=" js-mute-button button" >
             <i class="fa fa-volume-up fa-2x" aria-hidden="true" hidden></i>
+        </button>
+
+        <button id = 'expand' class="js-fullscreen-button button" >
+            <i class="fa fa-expand fa-2x" aria-hidden="true"></i>
         </button>
     </div>
 
